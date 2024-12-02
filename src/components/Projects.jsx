@@ -14,6 +14,11 @@ import P3I1 from '../assets/P3I1.png';
 import P3I2 from '../assets/P3I2.png';
 import P3I3 from '../assets/P3I3.png';
 import P3I4 from '../assets/P3I4.png';
+import P4I1 from '../assets/P4I1.png';
+import P4I2 from '../assets/P4I2.png';
+import P4I3 from '../assets/P4I3.png';
+import P4I4 from '../assets/P4I4.png';
+import P4I5 from '../assets/P4I5.png';
 
 const projectsData = {
   '1': {
@@ -53,6 +58,22 @@ const projectsData = {
     sourceCodeLink: 'https://github.com/shivabhujbal/email-otp-verification-react',
     images: [P3I1, P3I2, P3I3, P3I4],
   },
+  '4': {
+    title: 'Dynamic Web Application with Angular',
+    date: 'SEP 2023',
+    technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Mocha', 'GitLab'],
+    features: [
+      'Followed best practices, including modular folder structure, meaningful naming conventions, and code readability enhancements.',
+      'Implemented a responsive UI with dynamic components and ensured consistent indentation and spacing.',
+      'Utilized GitLab for version control and project collaboration, adhering to naming conventions and maintaining regular commits.',
+      'Wrote comprehensive unit tests using Mocha and Angular’s default testing utilities to ensure functionality and reliability.',
+      'Adopted Angular’s component-based structure, creating separate files for services, modules, directives, and pipes.',
+      'Delivered a loosely coupled system by following a modular approach with reusable components.',
+    ],
+    sourceCodeLink: 'https://gitlab.com/your-repo-link', 
+    images: [P4I1,P4I2,P4I3,P4I4,P4I5,], 
+  }
+
 };
 
 export default function Projects() {

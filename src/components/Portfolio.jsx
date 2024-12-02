@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import P1I1 from '../assets/P1I1.jpeg';
 
 import P2I1 from '../assets/P2I1.png';
+import P4I1 from '../assets/P4I1.png';
 
 import P3I1 from '../assets/P3I1.png';
 
@@ -11,7 +12,7 @@ const projects = [
     id:'1',
     title: "Chat Application",
     image: P1I1,
-    category: "Web Development",
+    category: "Full Stack Development (Java+ react)",
   },
   {
     id:'2',
@@ -24,6 +25,12 @@ const projects = [
     title: "Email ID Verification",
     image: P3I1,
     category: "Authentication",
+  },
+  {
+    id:'4',
+    title: "Web Application with Angular",
+    image: P4I1,
+    category: "Web Developement (Angular)",
   },
 ];
 
