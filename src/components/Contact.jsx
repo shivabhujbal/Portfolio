@@ -22,7 +22,7 @@ export default function Contact() {
     e.preventDefault();
 
     const templateParams = {
-      to_email: 'shivsambhbhujbal.skncoe.mech@gmail.com',
+      to_email: 'shivsambhbhujbal@gmail.com',
       email: formState.email,
       name: formState.name,
       subject: formState.subject,

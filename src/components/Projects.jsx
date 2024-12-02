@@ -76,7 +76,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto">
         {/* Back Arrow */}
         <motion.div
-          className="absolute top-6 left-6 cursor-pointer text-yellow-500"
+          className="fixed top-6 left-6 cursor-pointer text-yellow-500"
           onClick={() => navigate('/')}  // Using navigate() instead of history.push()
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
