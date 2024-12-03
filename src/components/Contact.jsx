@@ -12,14 +12,32 @@ export default function Contact() {
   });
 
   const [status, setStatus] = useState('');
+  const [emailError, setEmailError] = useState(''); // New state for email validation error
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormState(prev => ({ ...prev, [name]: value }));
+
+    // Clear email error when user starts typing again
+    if (name === 'email') {
+      setEmailError('');
+    }
+  };
+
+  // Email validation regex
+  const isValidEmail = (email) => {
+    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    return regex.test(email);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Check if email is valid
+    if (!isValidEmail(formState.email)) {
+      setEmailError('Please enter a valid email address.');
+      return;
+    }
 
     const templateParams = {
       to_email: 'shivsambhbhujbal@gmail.com',
@@ -123,6 +141,8 @@ export default function Contact() {
                 className="w-full bg-gray-700 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-300"
                 required
               />
+              {/* Show email validation error */}
+              {emailError && <p className="text-red-500 text-sm mt-2">{emailError}</p>}
             </div>
             <div>
               <label htmlFor="message" className="block text-gray-300 mb-1">Message</label>
