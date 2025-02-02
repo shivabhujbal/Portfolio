@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import abtImg from '../assets/about.jpg';
+import abtImg from '../assets/1737518208287.jpg';
 import resume from '../assets/resume.pdf'
 
 export default function About() {
